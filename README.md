@@ -1,2 +1,2 @@
 # SLM
-Agents with >1B models
+Agents with <1B models
