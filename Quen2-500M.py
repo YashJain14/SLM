@@ -51,6 +51,8 @@ for max_length in max_lengths:
 
 
 '''
+MacBook Air M2 16 GB
+
 Max length: 50
 Time taken: 6.47 seconds
 RAM used: 2435.43 MB

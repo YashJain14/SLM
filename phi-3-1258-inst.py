@@ -19,9 +19,6 @@ def measure_performance(prompt, model_name, tokenizer_config, max_tokens):
                         tokenizer,
                         prompt=prompt,
                         verbose=False,
-                        top_p=0.8,
-                        temp=0.7,
-                        repetition_penalty=1.05,
                         max_tokens=max_tokens)
 
     # Measure end time
@@ -42,7 +39,7 @@ def measure_performance(prompt, model_name, tokenizer_config, max_tokens):
     print("=" * 50)
 
 # Example usage
-model_name = 'Qwen/Qwen2-0.5B-Instruct-MLX'
+model_name = 'mlx-community/Phi-3-mini-128k-instruct-4bit'
 tokenizer_config = {"eos_token": ""}
 prompt = "Tell me about openAI"
 max_tokens_list = [50, 100, 200, 250, 300, 400, 500]
@@ -55,31 +52,31 @@ for max_tokens in max_tokens_list:
 MacBook Air M2 16 GB
 
 Max tokens: 50
-Time taken: 1.39 seconds
-RAM used: 405.78 MB
+Time taken: 2.88 seconds
+RAM used: 2118.88 MB
 ==================================================
 Max tokens: 100
-Time taken: 1.63 seconds
-RAM used: 52.73 MB
+Time taken: 3.75 seconds
+RAM used: 74.97 MB
 ==================================================
 Max tokens: 200
-Time taken: 2.68 seconds
-RAM used: 49.06 MB
+Time taken: 6.55 seconds
+RAM used: 43.61 MB
 ==================================================
 Max tokens: 250
-Time taken: 3.09 seconds
-RAM used: 29.23 MB
+Time taken: 7.94 seconds
+RAM used: 20.02 MB
 ==================================================
 Max tokens: 300
-Time taken: 3.49 seconds
-RAM used: 22.44 MB
+Time taken: 9.43 seconds
+RAM used: 16.09 MB
 ==================================================
 Max tokens: 400
-Time taken: 4.47 seconds
-RAM used: 22.17 MB
+Time taken: 12.21 seconds
+RAM used: 13.02 MB
 ==================================================
 Max tokens: 500
-Time taken: 5.50 seconds
-RAM used: 20.66 MB
+Time taken: 15.13 seconds
+RAM used: 3.33 MB
 ==================================================
 '''
