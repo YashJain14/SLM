@@ -18,7 +18,7 @@ def measure_performance(prompt, model_name, tokenizer_config, max_tokens):
     response = generate(model,
                         tokenizer,
                         prompt=prompt,
-                        verbose=False,
+                        verbose=True,
                         top_p=0.8,
                         temp=0.7,
                         repetition_penalty=1.05,
@@ -45,7 +45,7 @@ def measure_performance(prompt, model_name, tokenizer_config, max_tokens):
 model_name = 'Qwen/Qwen2-0.5B-Instruct-MLX'
 tokenizer_config = {"eos_token": ""}
 prompt = "Tell me about openAI"
-max_tokens_list = [50, 100, 200, 250, 300, 400, 500]
+max_tokens_list = [50]
 
 for max_tokens in max_tokens_list:
     measure_performance(prompt, model_name, tokenizer_config, max_tokens)
