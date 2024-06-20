@@ -4,7 +4,7 @@ from langchain.tools import ShellTool
 from langchain_community.llms.mlx_pipeline import MLXPipeline
 
 llm = MLXPipeline.from_model_id(
-    "YashJain/GitAI-gemma-2b",
+    "YashJain/GitAI-Qwen2-0.5B-Instruct-MLX-v1",
     pipeline_kwargs={"max_tokens": 100, "temp": 0.1},
 )
 
