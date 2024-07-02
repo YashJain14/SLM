@@ -39,4 +39,4 @@ for content, count in token_counts.items():
     if count > 2000:
         print(f" Tokens Count: {count}")
     counter = counter + count
-    # print(counter)
+    print(counter)
