@@ -2,7 +2,7 @@ import jsonlines
 from sklearn.model_selection import train_test_split
 
 # Input and output file paths
-input_file = "data.jsonl"
+input_file = "alldata.jsonl"
 train_file = "train.jsonl"
 validation_file = "valid.jsonl"
 test_file = "test.jsonl"

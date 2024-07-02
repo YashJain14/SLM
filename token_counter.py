@@ -30,12 +30,13 @@ def count_tokens_in_jsonl_file(file_path: str, role_filter: str = "assistant") -
     return token_counts
 
 # Example usage:
-file_path = 'data.jsonl'
+file_path = 'alldata.jsonl'
 token_counts = count_tokens_in_jsonl_file(file_path)
 
 # Print token counts for each message content
 counter = 0
 for content, count in token_counts.items():
-    print(f" Tokens Count: {count}")
+    if count > 2000:
+        print(f" Tokens Count: {count}")
     counter = counter + count
-    print(counter)
+    # print(counter)
